@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://6b6v67btr7dr"]
+
+[ext_resource type="Script" uid="uid://coof6knkg7brh" path="res://scripts/handzone.gd" id="1_lmvyj"]
+
+[node name="Handzone" type="Control" unique_id=1565885857]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lmvyj")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1595240226]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 6
+
+[node name="RContainer" type="PanelContainer" parent="HBoxContainer" unique_id=1289785017]
+custom_minimum_size = Vector2(55, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/RContainer" unique_id=878788139]
+layout_mode = 2
+
+[node name="Point1Placeholder" type="ColorRect" parent="HBoxContainer/RContainer/VBoxContainer" unique_id=1799164261]
+custom_minimum_size = Vector2(14, 14)
+layout_mode = 2
+color = Color(0.7058824, 0.7058824, 0.7058824, 1)
+
+[node name="Point2Placeholder" type="ColorRect" parent="HBoxContainer/RContainer/VBoxContainer" unique_id=1579016704]
+custom_minimum_size = Vector2(14, 14)
+layout_mode = 2
+color = Color(0.7058824, 0.7058824, 0.7058824, 1)
+
+[node name="Point3Placeholder" type="ColorRect" parent="HBoxContainer/RContainer/VBoxContainer" unique_id=1433116983]
+custom_minimum_size = Vector2(14, 14)
+layout_mode = 2
+color = Color(0.7058824, 0.7058824, 0.7058824, 1)
+
+[node name="Card1Container" type="PanelContainer" parent="HBoxContainer" unique_id=1334195177]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+
+[node name="Card2Container" type="PanelContainer" parent="HBoxContainer" unique_id=1090771729]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+
+[node name="Card3Container" type="PanelContainer" parent="HBoxContainer" unique_id=829765296]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+
+[node name="Card4Container" type="PanelContainer" parent="HBoxContainer" unique_id=616488246]
+custom_minimum_size = Vector2(140, 180)
+layout_mode = 2
+
+[node name="LContainer" type="PanelContainer" parent="HBoxContainer" unique_id=2081121729]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/LContainer" unique_id=2026745614]
+layout_mode = 2
+
+[node name="TrashZone" type="PanelContainer" parent="HBoxContainer/LContainer/VBoxContainer" unique_id=657903446]
+custom_minimum_size = Vector2(90, 85)
+layout_mode = 2
+
+[node name="TotalTrashLabel" type="Label" parent="HBoxContainer/LContainer/VBoxContainer/TrashZone" unique_id=406498827]
+layout_mode = 2
+
+[node name="TrashZonePlaceholder" type="ColorRect" parent="HBoxContainer/LContainer/VBoxContainer/TrashZone" unique_id=2037883611]
+custom_minimum_size = Vector2(70, 50)
+layout_mode = 2
+
+[node name="DeckZone" type="PanelContainer" parent="HBoxContainer/LContainer/VBoxContainer" unique_id=449820147]
+custom_minimum_size = Vector2(90, 85)
+layout_mode = 2
+
+[node name="TotalCardInDeckLabel" type="Label" parent="HBoxContainer/LContainer/VBoxContainer/DeckZone" unique_id=1826575437]
+layout_mode = 2
+
+[node name="DeckZonePlaceholder" type="ColorRect" parent="HBoxContainer/LContainer/VBoxContainer/DeckZone" unique_id=767690022]
+custom_minimum_size = Vector2(70, 50)
+layout_mode = 2

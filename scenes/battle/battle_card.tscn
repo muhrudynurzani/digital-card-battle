@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://1vpmy0pncbyh"]
+
+[node name="BattleCard" type="Control" unique_id=1679135804]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1910831950]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=562880995]
+layout_mode = 2
+
+[node name="ArtPlaceholder" type="ColorRect" parent="PanelContainer/MarginContainer" unique_id=936516741]
+layout_mode = 2
