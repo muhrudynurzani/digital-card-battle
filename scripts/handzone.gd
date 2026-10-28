@@ -3,7 +3,7 @@ class_name HandZone
 
 signal card_selected(card: CardData)
 
-const CARD_SCENE: PackedScene = preload("res://scenes/battle/card.tscn")
+const CARD_SCENE: PackedScene = preload("res://scenes/battle/battle_card.tscn")
 const MAX_HAND_SIZE: int = 4
 
 @onready var total_trash_label: Label = $HBoxContainer/LContainer/VBoxContainer/TrashZone/TotalTrashLabel
@@ -39,7 +39,7 @@ func display_hand(cards: Array[CardData], selectable: bool = true) -> void:
 		if i >= cards.size() or i >= MAX_HAND_SIZE:
 			continue
 
-		var card_view := CARD_SCENE.instantiate() as CardView
+		var card_view := CARD_SCENE.instantiate() as BattleCardView
 		slot.add_child(card_view)
 
 		card_view.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
