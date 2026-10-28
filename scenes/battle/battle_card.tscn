@@ -1,16 +1,27 @@
 [gd_scene format=3 uid="uid://1vpmy0pncbyh"]
 
+[ext_resource type="Script" uid="uid://bdfsmml85ff14" path="res://scripts/battle_card.gd" id="1_ks14p"]
+
 [node name="BattleCard" type="Control" unique_id=1679135804]
+custom_minimum_size = Vector2(120, 160)
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_ks14p")
 
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1910831950]
+[node name="Panel" type="Panel" parent="." unique_id=709188822]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=562880995]
-layout_mode = 2
+[node name="ArtPlaceholder" type="ColorRect" parent="Panel" unique_id=936516741]
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 160.0
 
-[node name="ArtPlaceholder" type="ColorRect" parent="PanelContainer/MarginContainer" unique_id=936516741]
-layout_mode = 2
+[node name="SelectButton" type="Button" parent="." unique_id=2102716781]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
