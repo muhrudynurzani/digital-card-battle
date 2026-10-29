@@ -67,17 +67,19 @@ func _update_card_appearance() -> void:
 
 	var frame_color: Color
 
-	match card_data.attribute:
-		CardData.CardAttribute.VACCINE:
+	match card_data.element:
+		CardData.CardElement.NATURE:
 			frame_color = Color("#42B883")
-		CardData.CardAttribute.VIRUS:
+		CardData.CardElement.FIRE:
 			frame_color = Color("#E05252")
-		CardData.CardAttribute.DATA:
+		CardData.CardElement.ICE:
 			frame_color = Color("#4387E8")
-		CardData.CardAttribute.FREE:
-			frame_color = Color("#B8B8C0")
+		CardData.CardElement.DARKNESS:
+			frame_color = Color("26262bff")
+		CardData.CardElement.RARE:
+			frame_color = Color("d2b93aff")
 		_:
-			frame_color = Color("#777777")
+			frame_color = Color("#B8B8C0")
 
 	var frame_style := StyleBoxFlat.new()
 	frame_style.bg_color = Color("#171923")
